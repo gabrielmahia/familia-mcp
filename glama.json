@@ -1,0 +1,37 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
+  "name": "familia-mcp",
+  "version": "0.1.0",
+  "description": "Kenya family infrastructure via MCP \u2014 inheritance, wills, trusts, diaspora property, caretaker records. Thesis Layer 10. 1st world: LegalZoom / Trust & Will.",
+  "license": "MIT",
+  "author": {
+    "name": "Gabriel Mahia",
+    "email": "contact@aikungfu.dev"
+  },
+  "tools": [
+    {
+      "name": "succession_law_guide",
+      "description": "Kenya inheritance rights and succession law guide"
+    },
+    {
+      "name": "will_writing_guide",
+      "description": "Legal will writing requirements and checklist for Kenya"
+    },
+    {
+      "name": "diaspora_property_guide",
+      "description": "Kenya diaspora property management from abroad"
+    },
+    {
+      "name": "inheritance_dispute_guide",
+      "description": "Inheritance dispute resolution pathways in Kenya"
+    },
+    {
+      "name": "caretaker_records_guide",
+      "description": "Caretaker arrangement setup for elderly parents"
+    },
+    {
+      "name": "trust_structures_kenya",
+      "description": "Kenya trust structures for family wealth protection"
+    }
+  ]
+}
