@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "familia-mcp"
+version = "0.1.0"
+description = "Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. 6 tools. Thesis Layer 10: Family Infrastructure."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["fastmcp>=0.9"]
+
+[project.scripts]
+familia-mcp = "familia_mcp.server:mcp.run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
