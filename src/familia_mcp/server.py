@@ -9,7 +9,7 @@ from fastmcp import FastMCP
 
 mcp = FastMCP(
     name="familia-mcp",
-    description="Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. DEMO data only."
+    instructions="Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. DEMO data only."
 )
 
 @mcp.tool(name="succession_law_guide",
