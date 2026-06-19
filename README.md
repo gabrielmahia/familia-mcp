@@ -1,5 +1,8 @@
 # familia-mcp
 
+[![familia-mcp Glama score](https://glama.ai/mcp/servers/gabrielmahia/familia-mcp/badges/score.svg)](https://glama.ai/mcp/servers/gabrielmahia/familia-mcp)
+
+
 > Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records.
 
 [![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue?logo=pypi)](https://pypi.org/project/familia-mcp/)
