@@ -55,6 +55,7 @@ def will_writing_guide() -> dict:
 @mcp.tool(name="diaspora_property_guide",
           description="Guide for Kenya diaspora managing property and estate from abroad. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
 def diaspora_property_guide(country: Optional[str] = "USA") -> dict:
+    """Return guidance for Kenyan diaspora on managing, inheriting, and protecting property in Kenya."""
     return {"source": "DEMO — Kenya Law Society, Lands Registry", "diaspora_country": country,
             "key_steps": {
                 "power_of_attorney": "Appoint a trusted person in Kenya via a Power of Attorney (POA). Must be notarised in your country and apostilled, then registered at Kenya Lands Registry.",
