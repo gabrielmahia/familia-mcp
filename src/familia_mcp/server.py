@@ -4,7 +4,7 @@ Thesis Layer 10: Families in Africa function like corporations.
 Build for inheritance, wills, trusts, diaspora property, caretaker records.
 """
 from __future__ import annotations
-from typing import Optional
+from typing import Annotated, Optional
 from fastmcp import FastMCP
 
 mcp = FastMCP(
@@ -13,8 +13,8 @@ mcp = FastMCP(
 )
 
 @mcp.tool(name="succession_law_guide",
-          description="Kenya succession law guide — inheritance rights, intestacy rules, gender equity. DEMO.")
-def succession_law_guide(situation: Optional[str] = None) -> dict:
+          description="Kenya succession law guide — inheritance rights, intestacy rules, gender equity. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
+def succession_law_guide(situation: Annotated[Optional[str], "Optional filter for situation. Pass None to return all results."] = None) -> dict:
     SITUATIONS = {
         "intestate":      "When someone dies without a will in Kenya, the Law of Succession Act 1972 applies. Spouse gets life interest in household goods and matrimonial home. Children share estate equally.",
         "widow_rights":   "A surviving spouse has the right to remain in the matrimonial home for life (or until remarriage). Children cannot evict a surviving spouse.",
@@ -32,7 +32,7 @@ def succession_law_guide(situation: Optional[str] = None) -> dict:
             "legal_aid": "Legal aid: FIDA Kenya (women), Kituo Cha Sheria, LSK Legal Aid Clinic"}
 
 @mcp.tool(name="will_writing_guide",
-          description="Guide to writing a legal will in Kenya. DEMO.")
+          description="Guide to writing a legal will in Kenya. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
 def will_writing_guide() -> dict:
     return {"source": "DEMO — Law of Succession Act 1972", "requirements": {
         "age": "Must be 18 or older (or married if under 18)",
@@ -53,7 +53,7 @@ def will_writing_guide() -> dict:
        "disclaimer": "Not legal advice. Have your will reviewed by a licensed advocate."}
 
 @mcp.tool(name="diaspora_property_guide",
-          description="Guide for Kenya diaspora managing property and estate from abroad. DEMO.")
+          description="Guide for Kenya diaspora managing property and estate from abroad. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
 def diaspora_property_guide(country: Optional[str] = "USA") -> dict:
     return {"source": "DEMO — Kenya Law Society, Lands Registry", "diaspora_country": country,
             "key_steps": {
@@ -71,8 +71,8 @@ def diaspora_property_guide(country: Optional[str] = "USA") -> dict:
             }, "diaspora_investment": "See also: faida-mcp for diaspora investment products (M-Akiba, NSE, REITs)"}
 
 @mcp.tool(name="inheritance_dispute_guide",
-          description="Guide to resolving inheritance disputes in Kenya. DEMO.")
-def inheritance_dispute_guide(dispute_type: Optional[str] = None) -> dict:
+          description="Guide to resolving inheritance disputes in Kenya. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
+def inheritance_dispute_guide(dispute_type: Annotated[Optional[str], "Optional filter for dispute type. Pass None to return all results."] = None) -> dict:
     PATHS = {
         "family_mediation":   "First step: attempt mediation within family or through a religious leader, community elder, or NCMCC mediator. Free or low cost.",
         "succession_court":   "File at High Court probate and succession registry. Requires filing fee ~KES 3,000. Can petition for letters of administration or contest a will.",
@@ -90,7 +90,7 @@ def inheritance_dispute_guide(dispute_type: Optional[str] = None) -> dict:
             "free_legal_aid": "FIDA Kenya: fidakenya.org | Kituo Cha Sheria: kituochasheria.or.ke"}
 
 @mcp.tool(name="caretaker_records_guide",
-          description="Guide for setting up caretaker arrangements for elderly parents or dependents in Kenya. DEMO.")
+          description="Guide for setting up caretaker arrangements for elderly parents or dependents in Kenya. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
 def caretaker_records_guide() -> dict:
     return {"source": "DEMO — Kenya Law, best practice", "why_important":
             "When diaspora families support elderly parents remotely, clear caretaker records prevent disputes, ensure continuity, and protect all parties legally.",
@@ -107,8 +107,8 @@ def caretaker_records_guide() -> dict:
             }, "legal_basis": "Employment Act 2007 applies to domestic workers. haki-ya-kazi-mcp for employment rights."}
 
 @mcp.tool(name="trust_structures_kenya",
-          description="Guide to trust structures available in Kenya for family wealth protection. DEMO.")
-def trust_structures_kenya(use_case: Optional[str] = None) -> dict:
+          description="Guide to trust structures available in Kenya for family wealth protection. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
+def trust_structures_kenya(use_case: Annotated[Optional[str], "Optional filter for use case. Pass None to return all results."] = None) -> dict:
     STRUCTURES = {
         "discretionary_trust": {
             "purpose": "Trustee has discretion over distributions. Good for minor children or beneficiaries needing protection.",
