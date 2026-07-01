@@ -4,6 +4,14 @@
 [![smithery badge](https://smithery.ai/badge/@gabrielmahia/familia-mcp)](https://smithery.ai/server/@gabrielmahia/familia-mcp)
 
 
+---
+**Compatible with `claude-sonnet-5`** (released 2026-06-30) — Anthropic's most agentic
+Sonnet yet. Runs multi-step tool chains end-to-end without stopping short.
+Install: `pip install familia-mcp` · Use with any MCP client.
+
+---
+
+
 > Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records.
 
 [![PyPI](https://img.shields.io/badge/PyPI-v0.1.0-blue?logo=pypi)](https://pypi.org/project/familia-mcp/)
