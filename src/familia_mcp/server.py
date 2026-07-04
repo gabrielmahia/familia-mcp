@@ -141,3 +141,7 @@ def trust_structures_kenya(use_case: Optional[str] = Field(None, description="Op
     return {"source": "DEMO — Kenya Trusts Act, Capital Markets Authority", "structures": STRUCTURES,
             "professional_trustee": "Professional trustees: Co-operative Bank Trust, Jubilee Holdings. Cost-effective for larger estates.",
             "disclaimer": "Not legal or financial advice. Consult an advocate or certified financial planner."}
+
+def main() -> None:
+    """Console entry point."""
+    mcp.run()

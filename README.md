@@ -1,4 +1,5 @@
 # familia-mcp
+<!-- mcp-name: io.github.gabrielmahia/familia-mcp -->
 
 [![familia-mcp Glama score](https://glama.ai/mcp/servers/gabrielmahia/familia-mcp/badges/score.svg)](https://glama.ai/mcp/servers/gabrielmahia/familia-mcp)
 [![smithery badge](https://smithery.ai/badge/@gabrielmahia/familia-mcp)](https://smithery.ai/server/@gabrielmahia/familia-mcp)
