@@ -4,7 +4,9 @@ Thesis Layer 10: Families in Africa function like corporations.
 Build for inheritance, wills, trusts, diaspora property, caretaker records.
 """
 from __future__ import annotations
+
 from typing import Annotated, Optional
+
 from fastmcp import FastMCP
 from pydantic import Field
 
@@ -15,7 +17,7 @@ mcp = FastMCP(
 
 @mcp.tool(name="succession_law_guide",
           description="Kenya succession law guide — inheritance rights, intestacy rules, gender equity. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
-def succession_law_guide(situation: Optional[str] = Field(None, description="Optional filter for situation. Pass None to return all results.")) -> dict:
+def succession_law_guide(situation: str | None = Field(None, description="Optional filter for situation. Pass None to return all results.")) -> dict:
     SITUATIONS = {
         "intestate":      "When someone dies without a will in Kenya, the Law of Succession Act 1972 applies. Spouse gets life interest in household goods and matrimonial home. Children share estate equally.",
         "widow_rights":   "A surviving spouse has the right to remain in the matrimonial home for life (or until remarriage). Children cannot evict a surviving spouse.",
@@ -55,7 +57,7 @@ def will_writing_guide() -> dict:
 
 @mcp.tool(name="diaspora_property_guide",
           description="Guide for Kenya diaspora managing property and estate from abroad. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
-def diaspora_property_guide(country: Optional[str] = "USA") -> dict:
+def diaspora_property_guide(country: str | None = "USA") -> dict:
     """Return guidance for Kenyan diaspora on managing, inheriting, and protecting property in Kenya."""
     return {"source": "DEMO — Kenya Law Society, Lands Registry", "diaspora_country": country,
             "key_steps": {
@@ -74,7 +76,7 @@ def diaspora_property_guide(country: Optional[str] = "USA") -> dict:
 
 @mcp.tool(name="inheritance_dispute_guide",
           description="Guide to resolving inheritance disputes in Kenya. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
-def inheritance_dispute_guide(dispute_type: Optional[str] = Field(None, description="Optional filter for dispute type. Pass None to return all results.")) -> dict:
+def inheritance_dispute_guide(dispute_type: str | None = Field(None, description="Optional filter for dispute type. Pass None to return all results.")) -> dict:
     PATHS = {
         "family_mediation":   "First step: attempt mediation within family or through a religious leader, community elder, or NCMCC mediator. Free or low cost.",
         "succession_court":   "File at High Court probate and succession registry. Requires filing fee ~KES 3,000. Can petition for letters of administration or contest a will.",
@@ -104,13 +106,13 @@ def caretaker_records_guide() -> dict:
                 "emergency_contacts": "Maintain a written list: nearest family member, doctor, advocate, hospital, nearest police station.",
             }, "payment": {
                 "method": "M-PESA or bank transfer with clear description ('care payment MM/YYYY')",
-                "tax": "If paying > KES 24,000/month, consider NHIF/NSSF registration for caretaker",
+                "tax": "If paying > KES 24,000/month, consider SHA (formerly NHIF) and NSSF registration for caretaker",
                 "minimum_wage": "Domestic worker minimum wage (Nairobi 2025): KES 16,168/month",
             }, "legal_basis": "Employment Act 2007 applies to domestic workers. haki-ya-kazi-mcp for employment rights."}
 
 @mcp.tool(name="trust_structures_kenya",
           description="Guide to trust structures available in Kenya for family wealth protection. DEMO.", annotations={"readOnlyHint": True, "openWorldHint": False})
-def trust_structures_kenya(use_case: Optional[str] = Field(None, description="Optional filter for use case. Pass None to return all results.")) -> dict:
+def trust_structures_kenya(use_case: str | None = Field(None, description="Optional filter for use case. Pass None to return all results.")) -> dict:
     STRUCTURES = {
         "discretionary_trust": {
             "purpose": "Trustee has discretion over distributions. Good for minor children or beneficiaries needing protection.",
