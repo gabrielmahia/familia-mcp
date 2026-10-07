@@ -1,8 +1,8 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "familia-mcp",
-  "version": "0.1.0",
-  "description": "Kenya family infrastructure via MCP \u2014 inheritance, wills, trusts, diaspora property, caretaker records. Thesis Layer 10. 1st world: LegalZoom / Trust & Will.",
+  "version": "0.1.6",
+  "description": "Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. 6 tools. Thesis Layer 10: Family Infrastructure.",
   "license": "MIT",
   "author": {
     "name": "Gabriel Mahia",
@@ -11,27 +11,27 @@
   "tools": [
     {
       "name": "succession_law_guide",
-      "description": "Kenya inheritance rights and succession law guide"
+      "description": "Kenya succession law guide — inheritance rights, intestacy rules, gender equity. DEMO."
     },
     {
       "name": "will_writing_guide",
-      "description": "Legal will writing requirements and checklist for Kenya"
+      "description": "Guide to writing a legal will in Kenya. DEMO."
     },
     {
       "name": "diaspora_property_guide",
-      "description": "Kenya diaspora property management from abroad"
+      "description": "Guide for Kenya diaspora managing property and estate from abroad. DEMO."
     },
     {
       "name": "inheritance_dispute_guide",
-      "description": "Inheritance dispute resolution pathways in Kenya"
+      "description": "Guide to resolving inheritance disputes in Kenya. DEMO."
     },
     {
       "name": "caretaker_records_guide",
-      "description": "Caretaker arrangement setup for elderly parents"
+      "description": "Guide for setting up caretaker arrangements for elderly parents or dependents in Kenya. DEMO."
     },
     {
       "name": "trust_structures_kenya",
-      "description": "Kenya trust structures for family wealth protection"
+      "description": "Guide to trust structures available in Kenya for family wealth protection. DEMO."
     }
   ],
   "keywords": [
@@ -47,5 +47,8 @@
     "mcp",
     "useful-rails",
     "ai-agents"
+  ],
+  "maintainers": [
+    "gabrielmahia"
   ]
 }
