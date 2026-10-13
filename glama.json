@@ -11,27 +11,27 @@
   "tools": [
     {
       "name": "succession_law_guide",
-      "description": "Kenya succession law guide — inheritance rights, intestacy rules, gender equity. DEMO."
+      "description": "Explain how inheritance works in Kenya under the Law of Succession Act 1972: what happens when someone dies with or without a will, who inherits, and the court process. Use when a family asks what to do after a death. Keywords in situation select entries; if none match, ALL situations are returned; with no argument it returns every situation and legal-aid contacts. Returns the source label, the situation, the guidance and a disclaimer. A summary labelled DEMO and not legal advice: consult an advocate, FIDA Kenya or Kituo Cha Sheria. Read-only; no side effects."
     },
     {
       "name": "will_writing_guide",
-      "description": "Guide to writing a legal will in Kenya. DEMO."
+      "description": "Requirements and steps for making a valid will in Kenya: age, capacity, witnesses, what to include, indicative advocate and probate costs. Use when someone asks how to write a will. Takes no arguments. Returns the source label, requirements, contents to include, indicative costs and a disclaimer. Fees are indicative and labelled DEMO: have a licensed advocate review the will. Read-only; no side effects."
     },
     {
       "name": "diaspora_property_guide",
-      "description": "Guide for Kenya diaspora managing property and estate from abroad. DEMO."
+      "description": "Steps for a Kenyan abroad to manage family property at home: power of attorney, land searches, a trusted representative, tax filing and records. Use when a diaspora family asks how to look after land or a house remotely. country is only echoed back; the same steps are returned for everyone. Returns the source label, the echoed country, the key steps, contacts such as the Lands registry and the Law Society of Kenya, and a pointer to faida-mcp. A static guide labelled DEMO and not legal advice: use a licensed advocate. Read-only; no side effects."
     },
     {
       "name": "inheritance_dispute_guide",
-      "description": "Guide to resolving inheritance disputes in Kenya. DEMO."
+      "description": "Routes to resolve a family inheritance dispute in Kenya: mediation first, then the court or tribunal, with free legal-aid options. Use when relatives disagree about an estate. Keywords in dispute_type select entries; if none match, ALL paths are returned; with no argument it lists all paths and legal-aid contacts. Returns the source label, the dispute type and the guidance. A static summary labelled DEMO and not legal advice: consult an advocate. Read-only; no side effects."
     },
     {
       "name": "caretaker_records_guide",
-      "description": "Guide for setting up caretaker arrangements for elderly parents or dependents in Kenya. DEMO."
+      "description": "How to keep clear records when diaspora family members pay for the care of elderly parents remotely: what to write down, how to pay and the employment rules that may apply to a caretaker. Use when a family wants to avoid disputes over care payments. Takes no arguments. Returns the source label, why records matter, what to record, payment practice, an indicative wage and tax note and the legal basis. The wage and contribution figures are indicative and unverified (labelled DEMO): check current minimum wages and SHA and NSSF rules. Read-only; no side effects."
     },
     {
       "name": "trust_structures_kenya",
-      "description": "Guide to trust structures available in Kenya for family wealth protection. DEMO."
+      "description": "Compare trust structures available in Kenya (such as discretionary and family trusts) with purpose and when each fits, plus the role of professional trustees. Use when someone asks how to hold assets for family. Keywords in use_case select entries; if none match, ALL structures are returned. Returns the source label, the structures, professional-trustee notes and a disclaimer. A static summary labelled DEMO and not legal or financial advice: consult an advocate or planner. Read-only; no side effects."
     }
   ],
   "keywords": [
