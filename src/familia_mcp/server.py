@@ -107,7 +107,7 @@ def caretaker_records_guide() -> dict:
             }, "payment": {
                 "method": "M-PESA or bank transfer with clear description ('care payment MM/YYYY')",
                 "tax": "If paying > KES 24,000/month, consider SHA (formerly NHIF) and NSSF registration for caretaker",
-                "minimum_wage": "Domestic worker minimum wage (Nairobi 2025): KES 16,168/month",
+                "minimum_wage": "Domestic worker minimum wage from 1 May 2026 (Regulation of Wages (General) (Amendment) Order, 2026): KES 18,047.40 a month in Nairobi, Mombasa, Kisumu, Nakuru and Eldoret, KES 9,268 elsewhere. Reported by FKE and the press: verify with the Ministry of Labour.",
             }, "legal_basis": "Employment Act 2007 applies to domestic workers. haki-ya-kazi-mcp for employment rights."}
 
 @mcp.tool(name="trust_structures_kenya",
