@@ -1,17 +1,17 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
   "name": "io.github.gabrielmahia/familia-mcp",
-  "description": "MCP server for family-services coordination in East Africa (familia = family)",
+  "description": "Kenya family-law guides: succession, wills, trusts, diaspora property, caretaker records.",
   "repository": {
     "url": "https://github.com/gabrielmahia/familia-mcp",
     "source": "github"
   },
-  "version": "0.1.8",
+  "version": "0.1.9",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "familia-mcp",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "transport": {
         "type": "stdio"
       }
