@@ -1,7 +1,7 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
   "name": "familia-mcp",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. 6 tools. Thesis Layer 10: Family Infrastructure.",
   "license": "MIT",
   "author": {
