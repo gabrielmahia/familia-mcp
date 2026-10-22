@@ -5,14 +5,22 @@ Build for inheritance, wills, trusts, diaspora property, caretaker records.
 """
 from __future__ import annotations
 
+from importlib.metadata import PackageNotFoundError
+from importlib.metadata import version as _pkg_version
 from typing import Annotated, Optional
 
 from fastmcp import FastMCP
 from pydantic import Field
 
+try:
+    _VERSION = _pkg_version("familia-mcp")
+except PackageNotFoundError:  # a source tree that was never installed
+    _VERSION = "0+unknown"
+
+
 mcp = FastMCP(
     name="familia-mcp",
-    instructions="Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. DEMO data only."
+    instructions="Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. DEMO data only.", version=_VERSION
 )
 
 @mcp.tool(name="succession_law_guide",
