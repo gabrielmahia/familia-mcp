@@ -4,15 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "familia-mcp"
-version = "0.1.11"
+version = "0.1.12"
 description = "Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. 6 tools. Thesis Layer 10: Family Infrastructure."
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = ["fastmcp>=2.0.0"]
 license-files = ["LICENSE"]
 classifiers = [
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
