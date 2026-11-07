@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "familia-mcp"
+abstract: "Kenya family infrastructure via MCP — inheritance, wills, trusts, diaspora property, caretaker records. 6 tools. Thesis Layer 10: Family Infrastructure."
+version: "0.1.13"
+authors:
+  - family-names: "Mahia"
+    given-names: "Gabriel"
+repository-code: "https://github.com/gabrielmahia/familia-mcp"
+license: "MIT"
